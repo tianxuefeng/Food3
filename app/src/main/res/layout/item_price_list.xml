@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp">
+
+    <TextView
+        android:id="@+id/tv_qty"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        tools:text="Lobster BisQue Lobster" />
+
+    <LinearLayout
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            tools:text="$16" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ico_delete" />
+    </LinearLayout>
+
+</LinearLayout>

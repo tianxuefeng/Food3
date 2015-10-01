@@ -20,11 +20,11 @@ import java.util.List;
  * Time: 下午5:31
  * PS: 学如逆水行舟，不进则退
  */
-public class PriceListAdapter extends BaseAdapter {
+public class OrderListAdapter extends BaseAdapter {
     private Context context;
     private List<OrderedPlu> data;
 
-    public PriceListAdapter(Context context) {
+    public OrderListAdapter(Context context) {
         this.context = context;
     }
 
@@ -52,7 +52,7 @@ public class PriceListAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = LayoutInflater.from(context).inflate(R.layout.item_price_list, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_order_list, parent, false);
             holder = new ViewHolder();
             holder.tvQty = (TextView) convertView.findViewById(R.id.tv_qty);
             holder.tvName = (TextView) convertView.findViewById(R.id.tv_name);

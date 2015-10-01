@@ -8,7 +8,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tc.food3.adapter.PriceListAdapter;
+import com.tc.food3.adapter.OrderListAdapter;
 import com.tc.food3.bean.OrderedPlu;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private ListView priceListView;
-    private PriceListAdapter adapter;
+    private OrderListAdapter adapter;
     private TextView submitTv;
     private TextView totalPriceTv;
     private float totalPrice;
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             order.setPrice(String.valueOf(price));
             data.add(order);
         }
-        adapter = new PriceListAdapter(this);
+        adapter = new OrderListAdapter(this);
         adapter.setData(data);
         priceListView.setAdapter(adapter);
 

@@ -9,15 +9,15 @@
         android:id="@+id/iv_top_bg"
         android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:scaleType="centerCrop"
         android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
         android:src="@mipmap/top_background"/>
 
     <LinearLayout
         android:id="@+id/ll_top"
-        android:layout_below="@+id/iv_top_bg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_top_bg">
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,9 +47,9 @@
 
     <View
         android:id="@+id/line"
-        android:layout_below="@+id/ll_top"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_below="@+id/ll_top"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="#737475"/>
@@ -60,29 +60,29 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/ll_bottom"
         android:layout_below="@id/line"
-        android:dividerHeight="0dp"
         android:divider="@android:color/transparent"
-        tools:layout="@layout/item_price_list" />
+        android:dividerHeight="0dp"
+        tools:layout="@layout/item_order_list" />
 
     <LinearLayout
         android:id="@+id/ll_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
 
-        <include layout="@layout/price_list_footer" />
+        <include layout="@layout/order_list_footer" />
 
         <TextView
             android:id="@+id/tv_submit"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/selector_add_to_order"
             android:gravity="center"
-            android:textColor="#ffffff"
-            android:textSize="20sp"
             android:text="Submit Order"
-            android:background="@drawable/selector_add_to_order"/>
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </RelativeLayout>
